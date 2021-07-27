@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leaderboard
 
-> One paragraph statement about the project.
+> A simple leaderboard made with the leaderboard API and webpacker for Microverse.
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,50 +10,27 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- HTML/CSS
+- Javascript
+- Webpacker
+- NPM
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- `git clone https://github.com/fernandorpm/leaderboard.git`
+- `cd leaderboard`
+- `npm install`
+- `npm run start`
 
 ## Authors
 
-👤 **Author1**
+👤 **Fernando R P Marques**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@fernandorpm](https://github.com/fernandorpm)
+- Twitter: [@rpm_fernando](https://twitter.com/rpm_fernando)
+- LinkedIn: [Fernando R P Marques](https://linkedin.com/in/fernandorpm)
 
 ## 🤝 Contributing
 
@@ -64,12 +41,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
