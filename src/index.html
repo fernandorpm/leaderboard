@@ -16,25 +16,20 @@
     <div class="score-list-container">
       <div class="score-list-title">
         <h2>Recent Scores</h2>
-        <button type="button">Refresh</button>
+        <button type="button" id="refresh">Refresh</button>
       </div>
       <ul>
-        <li>Name: 100</li>
-        <li>Name: 100</li>
-        <li>Name: 100</li>
-        <li>Name: 100</li>
-        <li>Name: 100</li>
-        <li>Name: 100</li>
+        <li>Loading...</li>
       </ul>
     </div>
     <div class="add-score-container">
       <h2>Add your score</h2>
       <form action="submit">
-        <input type="text" placeholder="Your name">
+        <input type="text" placeholder="Your name" id="user">
         <br><br>
-        <input type="number" placeholder="Your score">
+        <input type="number" placeholder="Your score" id="score">
         <br><br>
-        <input type="button" value="Submit">
+        <input type="button" value="Submit" id="submit">
       </form>
     </div>
   </div>
