@@ -1,16 +1,18 @@
-import { LeaderboardGET, LeaderboardPOST } from './api.js';
+import { leaderboardGet, leaderboardPost } from './api.js';
 import './style.css';
 
 document.querySelector('#submit').addEventListener('click', () => {
-  const user = document.querySelector('#user').value;
-  const score = document.querySelector('#score').value;
+  // eslint-disable-next-line
+  let user = document.querySelector('#user').value;
+  // eslint-disable-next-line
+  let score = document.querySelector('#score').value;
 
   document.querySelector('#user').value = '';
   document.querySelector('#score').value = '';
 
-  LeaderboardPOST(user, score);
+  leaderboardPost(user, score);
 });
 
-document.querySelector('#refresh').addEventListener('click', () => LeaderboardGET());
+document.querySelector('#refresh').addEventListener('click', leaderboardGet);
 
-LeaderboardGET();
+window.onload = leaderboardGet;

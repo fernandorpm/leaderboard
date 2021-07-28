@@ -1,14 +1,18 @@
 const scoreList = document.querySelector('.score-list-container ul');
 
-export default function LeaderboardDisplay(leaderboardArray) {
+const leaderboardDisplay = (leaderboardArray) => {
   scoreList.innerHTML = '';
 
   for (let idx = 0; idx < leaderboardArray.length; idx += 1) {
-    const score = leaderboardArray[idx];
-    const scoreItem = document.createElement('li');
+    // eslint-disable-next-line
+    let score = leaderboardArray[idx];
+    // eslint-disable-next-line
+    let scoreItem = document.createElement('li');
 
     scoreItem.innerHTML = `${score.user}: ${score.score}`;
 
     scoreList.appendChild(scoreItem);
   }
-}
+};
+
+export default leaderboardDisplay;

@@ -1,18 +1,18 @@
-import LeaderboardDisplay from './dom.js';
+import leaderboardDisplay from './dom.js';
 
 const fetchURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/XW3Ed1QYxBzVvRyVMvEB/scores';
 
-async function LeaderboardGET() {
+const leaderboardGet = async () => {
   await fetch(fetchURL, {
     method: 'get',
   })
     .then((response) => response.json())
     .then((data) => {
-      LeaderboardDisplay(data.result);
+      leaderboardDisplay(data.result);
     });
-}
+};
 
-async function LeaderboardPOST(user, score) {
+const leaderboardPost = async (user, score) => {
   const data = {
     user,
     score,
@@ -26,6 +26,6 @@ async function LeaderboardPOST(user, score) {
     }),
     body: JSON.stringify(data),
   });
-}
+};
 
-export { LeaderboardGET, LeaderboardPOST };
+export { leaderboardGet, leaderboardPost };
