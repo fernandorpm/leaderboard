@@ -54,14 +54,22 @@ ul {
 li {
   padding: 8px 10px;
   border-bottom: 1px solid lightgrey;
+  transition-duration: 0.3s;
+  cursor: default;
 }
 
 li:nth-child(even) {
-  background-color: whitesmoke;
+  background-color: rgb(247, 247, 247);
 }
 
 li:last-child {
   border: none;
+}
+
+li:hover {
+  background-color: rgb(235, 235, 235);
+  padding-left: 30px;
+  font-weight: bold;
 }
 
 /* FORM - SUBMIT SCORE ================================================================= */
@@ -82,6 +90,7 @@ input[type=button] {
   background-color: whitesmoke;
   cursor: pointer;
   max-width: 90px;
+  transition-duration: 0.2s;
 }
 
 input[type=button] {
@@ -90,7 +99,7 @@ input[type=button] {
 
 button:hover,
 input[type=button]:hover {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* Hide INPUT NUMBER ARROWS */
